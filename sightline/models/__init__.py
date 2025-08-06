@@ -1,0 +1,1 @@
+from sightline.models.visit import VisitLog, VisitLogManager
