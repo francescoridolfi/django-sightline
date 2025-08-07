@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+recursive-include sightline/static *
+recursive-include sightline/templates *
+recursive-include sightline/locale *

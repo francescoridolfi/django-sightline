@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Francesco Ridolfi <francesco.ridolfi.02@gmail.com>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-07 12:50+0200\n"
+"PO-Revision-Date: 2025-08-07 12:50+0200\n"
+"Last-Translator: Francesco Ridolfi <francesco.ridolfi.02@gmail.com>\n"
+"Language-Team: WebDropStudio <webdropstudio.eu>\n"
+"Language: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\sightline\admin.py:118
+msgid "Today Logs"
+msgstr "Log Odierni"
+
+#: .\sightline\admin.py:122
+msgid "Total Logs"
+msgstr "Log Totali"
+
+#: .\sightline\models\base.py:25
+msgid "Insertion Date"
+msgstr "Data Inserimento"
+
+#: .\sightline\models\base.py:29
+msgid "User Agent"
+msgstr "User Agent"
+
+#: .\sightline\models\base.py:33
+msgid "IP Address"
+msgstr "Indirizzo IP"
+
+#: .\sightline\models\base.py:99
+msgid "Hash Code"
+msgstr "Codice Hash"
+
+#: .\sightline\models\base.py:101
+msgid "MD5 auto generated hash from log details"
+msgstr "Hash MD5 generato automaticamente dai dettagli del registro"
+
+#: .\sightline\models\visit.py:59
+msgid "Visit Log"
+msgstr "Registro Visita"
+
+#: .\sightline\models\visit.py:60
+msgid "Visit Logs"
+msgstr "Registro Visite"
+
+#: .\sightline\models\visit.py:65
+msgid "Path"
+msgstr "Percorso"
+
+#: .\sightline\models\visit.py:70
+#, python-format
+msgid "%(user)s visited path: %(path)s at %(datetime)s"
+msgstr "%(user)s ha visitato il percorso: %(path)s il %(datetime)s"
+
+#: .\sightline\models\visit.py:71
+msgid "Guest"
+msgstr "Un ospite"
+
+#: .\sightline\templates\admin\dashboard.html:7
+msgid "Metrics"
+msgstr "Metriche"
+
+#: .\sightline\templates\admin\dashboard.html:11
+msgid "Log Chart"
+msgstr "Grafico del Registro"
+
+#: .\sightline\templates\admin\dashboard.html:16
+msgid "Location Map"
+msgstr "Visione Globale"

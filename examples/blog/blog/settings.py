@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
+from django.utils.translation import gettext_lazy as _
 from pathlib import Path
 from dotenv import load_dotenv
 import os
@@ -111,7 +111,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
+LANGUAGES = [
+    ('en', _('English')),
+    ('it', _('Italian')),
+]
 
 TIME_ZONE = 'UTC'
 
@@ -134,6 +138,7 @@ SIGHTLINE_SETTINGS = {
     
     "visit": {
         "enabled": True,
+        "exclude_path": r"^/admin/",
         "interval_capturing": 2 # Seconds
     },
 

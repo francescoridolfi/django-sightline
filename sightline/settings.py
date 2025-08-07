@@ -4,6 +4,7 @@ from django.conf import settings
 DEFAULT_SETTINGS = {
     "visit": {
         "enabled": True,
+        "exclude_path": r"^/admin/",
         "interval_capturing": 5 # Seconds
     },
     "geoip": {

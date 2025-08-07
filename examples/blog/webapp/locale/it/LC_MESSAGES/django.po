@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Francesco Ridolfi <francesco.ridolfi.02@gmail.com>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-07 12:50+0200\n"
+"PO-Revision-Date: 2025-08-07 12:50+0200\n"
+"Last-Translator: Francesco Ridolfi <francesco.ridolfi.02@gmail.com>\n"
+"Language-Team: WebDropStudio <webdropstudio.eu>\n"
+"Language: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\webapp\models.py:8
+msgid "Article"
+msgstr "Articolo"
+
+#: .\webapp\models.py:9
+msgid "Articles"
+msgstr "Articoli"
+
+#: .\webapp\models.py:12
+msgid "Title"
+msgstr "Titolo"
+
+#: .\webapp\models.py:19
+msgid "Published At"
+msgstr "Pubblicato Il"
+
+#: .\webapp\models.py:24
+msgid "Content"
+msgstr "Contenuto"
+
+#: .\webapp\templates\article.html:4 .\webapp\templates\base.html:6
+#: .\webapp\templates\base.html:24
+msgid "Example Blog"
+msgstr "Blog Esempio"
+
+#: .\webapp\templates\article.html:10 .\webapp\templates\index.html:19
+msgid "Published at"
+msgstr "Pubblicato il"
+
+#: .\webapp\templates\article.html:16
+msgid "Go back"
+msgstr "Vai indietro"
+
+#: .\webapp\templates\base.html:14
+msgid "My Blog"
+msgstr "Il Mio Blog"
+
+#: .\webapp\templates\index.html:5
+msgid "Home - Example Blog"
+msgstr "Home - Blog Esempio"
+
+#: .\webapp\templates\index.html:8
+msgid "Featured articles"
+msgstr "Articoli recenti"
+
+#: .\webapp\templates\index.html:25
+msgid "Learn more"
+msgstr "Approfondisci"
+
+#: .\webapp\templates\index.html:29
+msgid "No articles found."
+msgstr "Nessun articolo trovato."
