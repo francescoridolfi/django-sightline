@@ -18,6 +18,9 @@ def get_user_agent(request: HttpRequest):
 def timestamp_to_str(date: datetime.datetime) -> str:
     return date.strftime("%d/%m/%Y %H:%M:%S")
 
+def date_to_str(date: datetime.date | datetime.datetime) -> str:
+    return date.strftime("%d/%m/%Y")
+
 def time_compraration(
         timestamp: datetime.datetime,
         reference:datetime.datetime,

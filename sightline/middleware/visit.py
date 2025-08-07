@@ -23,7 +23,7 @@ def _save_log(log: VisitLog):
 class VisitLogMiddleware:
 
     def __init__(self, get_response: typing.Callable) -> None:
-        if not SIGHTLINE_VISIT_SETTINGS["enabled"]:
+        if not SIGHTLINE_VISIT_SETTINGS.get("enabled", True):
             raise MiddlewareNotUsed("VisitLog is not enabled")
         
         self.get_response = get_response
@@ -39,7 +39,7 @@ class VisitLogMiddleware:
         if not query.exists() or time_compraration(
             log.timestamp,
             query.last().timestamp,
-            SIGHTLINE_VISIT_SETTINGS["interval_capturing"]
+            SIGHTLINE_VISIT_SETTINGS.get("interval_capturing", 5)
         ):
             _save_log(log)
         

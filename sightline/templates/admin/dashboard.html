@@ -1,0 +1,43 @@
+{% extends "admin/change_list.html" %}
+
+{% load i18n static %}
+
+{% block content %}
+
+<h2>{% trans "Metrics" %}</h2>
+{{ metrics|safe }}
+<br>
+
+<h2>{% trans "Log Chart" %}</h2>
+
+<div id="logChart"></div>
+
+{% if use_geoip %}
+<h2>{% trans "Location Map" %}</h2>
+
+<div id="worldMap"></div>
+{% endif %}
+
+{{ block.super }}
+
+
+<script src="{% static "admin/js/vendor/d3/d3.v7.min.js" %}"></script>
+{% if use_geoip %}
+<script src="{% static "admin/js/vendor/topojson/topojson.3.0.2.js" %}"></script>
+<script src="{% static "admin/js/vendor/versor/versor.0.2.js" %}"></script>
+{% endif %}
+<script src="{% static "admin/js/charts.js" %}"></script>
+<script>
+    const logs = {{ chart_data|safe }};
+
+    renderLineChart("#logChart", 480, 250, logs);
+
+    {% if use_geoip %}
+    const geoData = {{ geo_points|safe }};
+
+    geoChart("#worldMap", 480, 250, geoData);
+    {% endif %}
+</script>
+{% endblock %}
+
+

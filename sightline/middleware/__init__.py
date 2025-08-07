@@ -1,0 +1,1 @@
+from sightline.middleware.visit import VisitLogMiddleware

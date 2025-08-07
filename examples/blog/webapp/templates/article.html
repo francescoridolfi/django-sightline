@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ article.title }} - {% trans "Example Blog" %}{% endblock %}
+{% block content %}
+
+<article>
+    <h1>{{ article.title }}</h1>
+    <p class="text-muted">
+        {% trans "Published at" %} {{ article.published_at|date:"d M Y" }}
+    </p>
+    <div>
+        {{ article.content|safe }}
+    </div>
+    <a href="{% url 'webapp:index' %}" class="btn btn-outline-secondary mt-3">
+        ← {% trans "Go back" %}
+    </a>
+</article>
+
+{% endblock %}

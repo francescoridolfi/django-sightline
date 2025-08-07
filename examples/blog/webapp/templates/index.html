@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Home - Example Blog" %}{% endblock %}
+{% block content %}
+<h1 class="mb-4">
+    {% trans "Featured articles" %}
+</h1>
+
+{% for article in articles %}
+    <div class="mb-4">
+        <h2>
+            <a href="{% url 'webapp:article' slug=article.slug %}">
+                {{ article.title }}
+            </a>
+        </h2>
+        <p class="text-muted">
+            {% trans "Published at" %} {{ article.published_at|date:"d M Y" }}
+        </p>
+        <p>
+            {{ article.content|safe|truncatechars:20 }}...
+        </p>
+        <a href="{% url 'webapp:article' slug=article.slug %}" class="btn btn-sm btn-primary">
+            {% trans "Learn more" %}
+        </a>
+    </div>
+{% empty %}
+    <p>{% trans "No articles found." %}</p>
+{% endfor %}
+
+{% endblock %}
