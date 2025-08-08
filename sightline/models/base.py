@@ -42,7 +42,7 @@ class LogMixin(models.Model):
         return self.timestamp.time()
 
     @property
-    def user_agent(self) -> user_agents.parsers.UserAgent | None:
+    def user_agent(self) -> user_agents.parsers.UserAgent:
         if self.raw_user_agent is None or self.raw_user_agent == "":
             return None
         return user_agents.parsers.parse(self.raw_user_agent)
