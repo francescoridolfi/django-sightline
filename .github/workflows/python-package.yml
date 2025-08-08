@@ -28,7 +28,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        python -m pip install django Pillow user-agents geoip2 dotenv
+        python -m pip install django Pillow user-agents geoip2 dotenv django-sightline
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run django tests
       run: |
